@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakes in Pokhara</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .mydiv{
+            height: 400px;
+        }
+        .photos{
+            height: 300px;
+            width: 550px;
+            float: right;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .top{
+            text-align: center;
+        }
+        .allign{
+            margin-left: 30px;
+            font-weight: bold;
+            font-size: medium;
+            padding-top:10px;
+        }
+        button{
+            background-color: wheat;
+            margin-left: 8px
+        }
+        button:hover{
+            background-color: thistle;
+            border: 2px solid gold
+        }
+        @media only screen and (max-width: 900px){
+            .photos{
+                height: 350px;
+                width: 550px;
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+               
+                padding: 5px;
+                float: none;
+                border-radius: 10px;
+            }
+            .mydiv{
+                height: 550px;
+            }
+            .allign{
+                margin-top: 5px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" >
+    <div class="top">
+    <h1>
+        Lakes in Pokhara
+    </h1>
+    <h4>Here are some famous lakes in Pokhara</h4>
+    </div>
+        <hr>
+    <div class="mydiv">
+        <h3>1. Fewa Lake </h3>
+        <img class="photos" src="https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2019/miscellaneous/POKHARA_02032018_D6A9406-01052018055718-1000x0-22032019084423.jpg&w=900&height=601" alt="Mahendra cave"/>
+        <div class="allign">
+            <p> Name: Fewa Lake</p>
+            <p> Address: Lakeside, Pokhara</p>
+            <p> Famous for: Natural and Cultural aspects of the place.</p>
+            <form action="/home/caves/fewa" method="POST">
+                <div class="dropdown">
+                    <label for="rating">Choose a rating:</label>
+                    <input type="number" id="rating" name="rating" placeholder="choose btwn 1 to 5" min="0" max="5" required>
+                    <button type="Submit"> Rate </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="mydiv">
+        <h3>2. Begnas Lake </h3>
+        <img class="photos" src="https://inventpokhara.com/wp-content/uploads/2014/04/begnas-lake.jpg" alt="Mahendra cave"/>
+        <div class="allign">
+            <p> Name: Begnas Lake</p>
+            <p> Address: Lekhnath, Pokhara</p>
+            <p> Famous for: Peaceful environment and greenary.</p>
+            <form action="/home/caves/begnas" method="POST">
+                <div class="dropdown">
+                    <label for="rating">Choose a rating:</label>
+                    <input type="number" id="rating" name="rating" placeholder="choose btwn 1 to 5" min="0" max="5" required>
+                    <button type="Submit"> Rate </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="mydiv">
+        <h3>3. Rupa Lake </h3>
+        <img class="photos" src="https://www.outfitternepal.com/uploads/img/rupa-tal-lake-in-pokhara.jpg" alt="Mahendra cave"/>
+        <div class="allign">
+            <p> Name: Rupa Lake</p>
+            <p> Address: Lekhnath, Pokhara</p>
+            <p> Famous for: Peaceful environment and beautiful scenary.</p>
+            <form action="/home/caves/rupa" method="POST">
+                <div class="dropdown">
+                    <label for="rating">Choose a rating:</label>
+                    <input type="number" id="rating" name="rating" placeholder="choose btwn 1 to 5" min="0" max="5" required>
+                    <button type="Submit"> Rate </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+        <div class="mydiv">
+            <h3> 4. Deepang Taal </h3>
+            <img class="photos" src="https://lh3.googleusercontent.com/p/AF1QipPHS9sfaKl-NqQsK1A7SXvCtjqeZeUuFdDJhdbF" alt="Mahendra cave"/>
+            <div class="allign">
+                <p> Name: Deepang Taal</p>
+                <p> Address: Lekhnath, Pokhara</p>
+                <p> Famous for: Rich in biodiversity.</p>
+                <form action="/home/caves/deepang" method="POST">
+                    <div class="dropdown">
+                        <label for="rating">Choose a rating:</label>
+                        <input type="number" id="rating" name="rating" placeholder="choose btwn 1 to 5" min="0" max="5" required>
+                        <button type="Submit"> Rate </button>
+                    </div>
+                </form>
+            </div>
+    </div>
+    <hr>
+</body>
+</html>

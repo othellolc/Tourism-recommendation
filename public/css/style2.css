@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  margin-bottom: 50px;
+}
+
+.container-fluid {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  background-color: #1abc9c;
+}
+.navbar-nav li a:hover {
+  color: red !important;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1abc9c;
+  position: fixed;
+}
+.footer p {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #fff;
+}
+
+/*------------------ Contact us----------------- */
+.container1 {
+  margin: 0px auto;
+  width: 65%;
+}
+.myHead {
+  text-align: center;
+  text-decoration: underline;
+}
+.myDiv {
+  border: 3px solid black;
+  margin: 25px 5px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+  margin: 15px 7px 15px 0px;
+
+  border: 3px solid blueviolet;
+  border-radius: 100%;
+}
+.arrange {
+  display: inline-block;
+  float: right;
+  margin-right: 20%;
+  margin-top: 3%;
+  line-height: 30px;
+  font-weight: bolder;
+  font-size: large;
+  width: 40%;
+}
+.fab {
+  padding-right: 7px;
+  color: black;
+  margin-top: 8px;
+}
+/* --------------------------------- home ---------------------*/
+.selectable {
+  text-align: center;
+}
+.select {
+  height: 50px;
+  border: 2px solid green;
+  text-align: center;
+  font-weight: bolder;
+  background-color: aquamarine;
+  border-radius: 5px;
+  margin: 20px auto;
+  font-size: larger;
+}
+.select option {
+  color: rgb(58, 55, 55);
+  font-size: large;
+  border-radius: 5px;
+  padding: 3px;
+}
+.select:hover {
+  cursor: pointer;
+}
+#recommend {
+  text-align: center;
+  margin: 30px;
+}
+#recommend button {
+  background-color: cadetblue;
+  font-weight: bolder;
+}
+#recommend button:hover {
+  border: 3px solid rosybrown;
+}
+
+#result {
+  visibility: hidden;
+}
+#uname {
+  color: blueviolet;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 7px;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+}
+.video {
+  width: 700px;
+  height: 400px;
+  margin-left: 175px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*------------------------------- Gallery-------------------------- */
+.container2 {
+  width: 80%;
+  margin: 3px auto;
+}
+
+.gallery {
+  border: 2px solid black;
+}
+.gallery img {
+  transition: 0.5s;
+  width: 100%;
+  height: 200px;
+}
+.gallery img:hover {
+  filter: grayscale(50%);
+  transform: scale(1.02);
+}
+.desc {
+  padding: 10px;
+  text-align: center;
+  color: red;
+}
+.responsive {
+  padding: 8px 5px;
+  float: left;
+  width: 25%;
+}
+
+/*-------------------------------- Media Queries -------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+  .image {
+    display: block;
+    margin: 8px auto;
+    height: 200px;
+    width: 200px;
+  }
+  .arrange {
+    display: block;
+    margin: 0;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .container1 {
+    width: 85%;
+  }
+  .responsive {
+    width: 100%;
+    margin: 6px 0px;
+  }
+  .video {
+    width: 100%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Places in Pokhara</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .mydiv{
+            height: 400px;
+        }
+        .photos{
+            height: 300px;
+            width: 550px;
+            float: right;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .top{
+            text-align: center;
+        }
+        .allign{
+            margin-left: 30px;
+            font-weight: bold;
+            font-size: medium;
+            padding-top:10px;
+        }
+        @media only screen and (max-width: 900px){
+            .photos{
+                height: 350px;
+                width: 550px;
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+               
+                padding: 5px;
+                float: none;
+                border-radius: 10px;
+            }
+            .mydiv{
+                height: 550px;
+            }
+            .allign{
+                margin-top: 5px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" >
+    <div class="top">
+    <h1>
+        Cultural Places in Pokhara
+    </h1>
+    <h4>Here are some famous caves in Pokhara</h4>
+    </div>
+        <hr>
+    <div class="mydiv">
+        <h3>1. Shanti Stupa </h3>
+        <img class="photos" src="https://www.holidify.com/images/cmsuploads/compressed/1024px-Shanti_Stupa_Pokhara_20181001151450.JPG" alt="Shanti Stupa"/>
+        <div class="allign">
+            <p> Name: Shanti Stupa</p>
+            <p> Address: Chorepatan, Pokhara</p>
+            <p> Famous for: The strucure of gumba and cultural importance of Buddhism.</p>
+            <form action="/home/cultural/shanti" method="POST">
+                <div class="dropdown">
+                    <label for="rating">Choose a rating:</label>
+                    <input type="number" id="rating" name="rating" min="0" max="5" placeholder="choose btwn 1 to 5" required>
+                    <button type="Submit"> Rate </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="mydiv">
+        <h3>2. Bindabasini Temple </h3>
+        <img class="photos" src="https://www.vivaanadventure.com/wp-content/uploads/2019/01/45613398_643060039422306_7554389982337564672_n-1080x540.jpg" alt="Bindabasini Temple"/>
+        <div class="allign">
+            <p> Name: Bindabasini Temple</p>
+            <p> Address: Bindabasini, Pokhara</p>
+            <p> Famous for: Cultural importance of hindu religion and its uninque traditional design.</p>
+            <form action="/home/cultural/bindabasini" method="POST">
+                <div class="dropdown">
+                    <label for="rating">Choose a rating:</label>
+                    <input type="number" id="rating" name="rating" min="0" max="5" placeholder="choose btwn 1 to 5" required>
+                    <button type="Submit"> Rate </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="mydiv">
+        <h3>3. Barahi Temple </h3>
+        <img class="photos" src="https://image.shutterstock.com/image-photo/pokhara-lake-island-tal-barahi-260nw-1197970555.jpg" alt="Barahi_temple"/>
+        <div class="allign">
+            <p> Name: Barahi Temple</p>
+            <p> Address: Lakeside, Pokhara</p>
+            <p> Famous for: Its island like location and cultural importance of hinduism.</p>
+            <form action="/home/cultural/barahi" method="POST">
+                <div class="dropdown">
+                    <label for="rating">Choose a rating:</label>
+                    <input type="number" id="rating" name="rating" min="0" max="5" placeholder="choose btwn 1 to 5" required>
+                    <button type="Submit"> Rate </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+        <div class="mydiv">
+            <h3> 4. Matepani Gumba</h3>
+            <img class="photos" src="http://3.bp.blogspot.com/-HnRdOtVOio4/TgvW8SbDcXI/AAAAAAAAAAM/GSmV6NFV4dY/s1600/chisapanimatepanigumbapokhara39.jpg" alt="Matepani_Gumba"/>
+            <div class="allign">
+                <p> Name: Matepani Gumba</p>
+                <p> Address: Matepani, Pokhara</p>
+                <p> Famous for: Its sturcure and cultural importance of Buddhism</p>
+                <form action="/home/cultural/matepani" method="POST">
+                    <div class="dropdown">
+                        <label for="rating">Choose a rating:</label>
+                        <input type="number" id="rating" name="rating" min="0" max="5" placeholder="choose btwn 1 to 5" required>
+                        <button type="Submit"> Rate </button>
+                    </div>
+                </form>
+            </div>
+    </div>
+    <hr>
+</body>
+</html>

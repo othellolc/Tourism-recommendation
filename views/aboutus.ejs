@@ -1,0 +1,56 @@
+<%- include("partials/header")%>
+<div class="container2">
+<h2>Try looking for places in Google maps.</h2>
+<hr>
+
+<div id="map"></div>
+<script>
+    //map options
+
+    function initMap(){
+        var options={
+            zoom:13,
+            center: {lat: 28.209499, lng: 83.959518}
+        }
+        //New map
+        var map= new google.maps.Map(document.getElementById('map'), options);
+        /*
+        //Add marker
+        var marker = new google.maps.Marker({
+            position:{lat: 28.234258, lng:83.996054},
+            map: map
+        });
+        //index marker
+        var infowindow = new google.maps.InfoWindow({
+            content: '<h4> Mount Annapurna Campus </h4>'
+        });
+        marker.addListener('click', function(){
+            infowindow.open(map, marker);
+        });
+        */
+       addMarker({coords:{lat: 28.234258, lng:83.996054},
+                    content:'<h4> Mount Annapurna Campus </h4>'
+    });
+       //add function marker
+       function addMarker(props){
+        var marker = new google.maps.Marker({
+            position:props.coords,
+            map: map
+        });
+        //check content
+        if (props.content){
+            var infowindow = new google.maps.InfoWindow({
+            content: props.content
+        });
+        marker.addListener('click', function(){
+            infowindow.open(map, marker);
+        });
+        }
+
+       }
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB32fK70xNSN28PstWUo4URHMh8mGWD28o&callback=initMap"
+  type="text/javascript"></script>
+</div>
+<%- include("partials/footer")%>

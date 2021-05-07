@@ -1,0 +1,29 @@
+{
+  "name": "tourism-recommendation",
+  "version": "1.0.0",
+  "description": "This is our tourism recommendation project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app.js"
+  },
+  "author": "Sushil Rajeev Sugat Milan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "likely": "^0.2.0",
+    "lodash": "^4.17.20",
+    "md5": "^2.3.0",
+    "mongoose": "^5.10.6",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
